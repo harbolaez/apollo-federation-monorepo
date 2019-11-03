@@ -1,0 +1,25 @@
+{
+  "name": "hubql-accounts",
+  "version": "1.0.0",
+  "description": "Accounts relative content",
+  "author": "Henry Arbolaez <henryarbolaez@gmail.com>",
+  "license": "ISC",
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "nodemon -r @ts-tools/node/r -r tsconfig-paths/register --ext ts,tsx,js,json,graphql ./src/server.ts"
+  },
+  "dependencies": {
+    "@apollo/federation": "^0.10.2",
+    "apollo-datasource-rest": "^0.6.6",
+    "apollo-server": "^2.9.7",
+    "hubql-common": "^1.0.0"
+  }
+}

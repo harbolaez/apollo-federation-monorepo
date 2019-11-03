@@ -1,0 +1,30 @@
+{
+  "name": "monorepo-apollo-federeation",
+  "scripts": {
+    "watch": "tsc --build tsconfig.build.json --watch",
+    "bootstrap": "yarn install && lerna bootstrap && lerna run --parallel --stream bootstrap",
+    "clean": "lerna clean --yes && rimraf node_modules yarn.lock package-lock.json",
+    "app-start": "lerna run start --ignore=hubql-gateway --stream --parallel --bail",
+    "gateway-start": "lerna run start --scope hubql-gateway --stream --parallel --bail"
+  },
+  "devDependencies": {
+    "@ts-tools/node": "^1.1.1",
+    "@types/node": "^12.12.5",
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "eslint": "^6.6.0",
+    "lerna": "^3.18.3",
+    "nodemon": "^1.19.4",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.4.1",
+    "ts-transformer-imports": "0.4.3",
+    "typescript": "^3.1.1"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^0.10.8",
+    "apollo-server": "^2.9.7",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.5.8",
+    "merge-graphql-schemas": "^1.7.0"
+  }
+}

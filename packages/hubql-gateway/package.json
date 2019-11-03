@@ -1,0 +1,21 @@
+{
+  "name": "hubql-gateway",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Henry Arbolaez <henryarbolaez@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "nodemon -r @ts-tools/node/r -r tsconfig-paths/register --ext ts,tsx,js,json ./src/server.ts"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*"]
+    },
+    "lib": ["es6", "dom", "es2017.object", "es2016.array.include"],
+    "declaration": true,
+    "experimentalDecorators": true,
+    "plugins": [{ "transform": "ts-transformer-imports" }],
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*"]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "hubql-common",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Henry Arbolaez <henryarbolaez@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "rm -rf ./dist && tsc -p tsconfig.build.json"
+  }
+}
