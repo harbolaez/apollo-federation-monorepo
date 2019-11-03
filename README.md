@@ -1,1 +1,3 @@
-# apollo-federation-monorepo
+# Apollo Federation Monorepo Boilerplate
+
+
